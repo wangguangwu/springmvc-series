@@ -3,5 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/chat01-helloWorld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chat01-helloWorld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chat02-receiveParam/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chat02-receiveParam/src/main/resource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chat02-receiveParam/src/main/resources" charset="UTF-8" />
   </component>
 </project>
