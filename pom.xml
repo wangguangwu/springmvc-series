@@ -11,6 +11,7 @@
         <module>chat01-helloWorld</module>
         <module>chat02-receiveParam</module>
         <module>chat03-receiveParam-json</module>
+        <module>chat04-uploadFile</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,18 +23,20 @@
         <servlet.version>4.0.1</servlet.version>
         <springmvc.version>5.3.20</springmvc.version>
         <jacson.version>2.13.3</jacson.version>
+        <commons.fileupload.version>1.4</commons.fileupload.version>
+        <commons.io.version>2.11.0</commons.io.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- 添加springmvc依赖 -->
+            <!-- springmvc-->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
                 <version>${springmvc.version}</version>
             </dependency>
 
-            <!-- 添加servlet 依赖 -->
+            <!--servlet-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -66,6 +69,19 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jacson.version}</version>
+            </dependency>
+
+            <!--文件上传-->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons.fileupload.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -12,19 +12,13 @@
     <file type="web" url="file://$PROJECT_DIR$/chat02-receiveParam" />
     <file type="web" url="file://$PROJECT_DIR$/chat03-json" />
     <file type="web" url="file://$PROJECT_DIR$/chat03-receiveParam-json" />
+    <file type="web" url="file://$PROJECT_DIR$/chat04-uploadFile" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/chat03-json/pom.xml" />
-        <option value="$PROJECT_DIR$/receiveParam-json/pom.xml" />
-        <option value="$PROJECT_DIR$/redis/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--设置包扫描路径-->
+    <context:component-scan base-package="com.wangguangwu.controller"/>
+    <!--添加 mvc 注解驱动-->
+    <mvc:annotation-driven/>
+
+    <!--
+    org.springframework.web.multipart.commons.CommonsMultipartResolver：Multipart 解析器
+        1. http 上传的请求类型为 multipart/form-data 类型，需要为这种请求指定解析器
+        2. MultipartResolver 有 2 个实现类，我们使用 CommonsMultipartResolver 作为解析器来解析文件上传的 http 请求
+        3. bean 的名称是指定的，必须为 multipartResolver
+        DispatcherServlet#doDispatch 中会调用 checkMultipart 方法来解析文件上传的请求，
+        checkMultipart 方法中的关键代码就是调用 this.multipartResolver.resolveMultipart(request) 来处理文件上传的请求
+    -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--
+        maxUploadSizePerFile:单个文件大小限制（byte）
+        maxUploadSize：整个请求大小限制（byte）
+        -->
+        <property name="maxUploadSizePerFile" value="#{10*1024*1024}"/>
+        <property name="maxUploadSize" value="#{100*1024*1024}"/>
+    </bean>
+
+</beans>

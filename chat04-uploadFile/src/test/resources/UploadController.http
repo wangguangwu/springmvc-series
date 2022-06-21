@@ -1,0 +1,77 @@
+### 单文件上传
+POST {{url}}/hello/upload1
+Content-Type: multipart/form-data; boundary=----WebAppBoundary
+
+------WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="1.jpg"
+
+< ./1.jpg
+------WebAppBoundary--
+
+### 多文件上传
+POST {{url}}/hello/upload2
+Content-Type: multipart/form-data; boundary=----WebAppBoundary
+
+------WebAppBoundary
+Content-Type: form-data; name="file1"; filename="1.jpg"
+Content-Type: image/jpeg
+
+< ./1.jpg
+------WebAppBoundary
+Content-Type: form-data; name="file2"; filename="2.jpg"
+Content-Type: image/jpeg
+
+< ./2.jpg
+------WebAppBoundary--
+
+
+### 多文件上传
+POST {{url}}/hello/upload3
+Content-Type: multipart/form-data; boundary=----bound1
+
+------bound1
+Content-Disposition: form-data; name="name"
+
+汪光武,gary helloworld
+------bound1
+Content-Disposition: form-data; name="age"
+
+23
+------bound1
+Content-Disposition: form-data; name="file1"; filename="1.jpg"
+
+< ./1.jpg
+------bound1
+Content-Disposition: form-data; name="file2"; filename="2.jpg"
+Content-Type: image/jpeg
+
+< ./2.jpg
+------bound1--
+
+### 多文件上传
+POST {{url}}/hello/upload4
+Content-Type: multipart/form-data; boundary=----bound2
+
+------bound2
+Content-Disposition: form-data; name="name"
+Content-Type: text/plain
+
+wangguangwu
+------bound2
+Content-Disposition: form-data; name="age"
+Content-Type: text/plain
+
+23
+------bound2
+Content-Disposition: form-data; name="headImg"; filename="2.jpg"
+
+< ./2.jpg
+------bound2
+Content-Disposition: form-data; name="idCardImg"; filename="1.jpg"
+
+< ./1.jpg
+------bound2
+Content-Disposition: form-data; name="idCardImg"; filename="3.jpg"
+
+< ./3.jpg
+------bound2--
