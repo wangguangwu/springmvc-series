@@ -10,6 +10,7 @@
     <modules>
         <module>chat01-helloWorld</module>
         <module>chat02-receiveParam</module>
+        <module>chat03-receiveParam-json</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -20,6 +21,7 @@
         <lombok.version>1.18.24</lombok.version>
         <servlet.version>4.0.1</servlet.version>
         <springmvc.version>5.3.20</springmvc.version>
+        <jacson.version>2.13.3</jacson.version>
     </properties>
 
     <dependencyManagement>
@@ -51,6 +53,19 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+
+            <!--jackson-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jacson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jacson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

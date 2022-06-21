@@ -1,0 +1,20 @@
+### 发送 json 请求(body 中数据为 json 格式)
+POST http://localhost:8080/chat03/hello/add.do
+Content-Type: application/json;charset=UTF-8
+
+{
+  "name": "wangguangwu",
+  "age": 23,
+  "address": "hangzhou"
+}
+
+### 使用 String 参数接收 body 数据
+POST http://localhost:8080/chat03/hello/m1.do
+Content-Type: multipart/form-data
+
+Hello World
+
+### 使用 byte[] 接收 body 数据
+POST http://localhost:8080/chat03/hello/m2.do
+
+123
