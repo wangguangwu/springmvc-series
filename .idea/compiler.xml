@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="chat03-receiveParam-json" />
         <module name="chat04-uploadFile" />
+        <module name="chat05-returnView" />
         <module name="chat01-helloWorld" />
         <module name="chat02-receiveParam" />
       </profile>

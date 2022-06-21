@@ -12,5 +12,7 @@
     <file url="file://$PROJECT_DIR$/chat03-receiveParam-json/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chat04-uploadFile/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chat04-uploadFile/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chat05-returnView/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chat05-returnView/src/main/resources" charset="UTF-8" />
   </component>
 </project>
