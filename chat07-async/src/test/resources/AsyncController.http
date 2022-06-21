@@ -1,0 +1,12 @@
+### 正常逻辑
+GET http://localhost:8080/chat07/async/m1
+Accept: application/json
+
+### timeout
+GET http://localhost:8080/chat07/async/m2/1000
+Accept: application/json
+
+### success
+GET http://localhost:8080/chat07/async/m2/3500
+Accept: application/json
+
