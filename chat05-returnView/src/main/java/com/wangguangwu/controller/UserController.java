@@ -41,9 +41,9 @@ public class UserController {
     Map<Long, UserDto> userDtoMap = new ConcurrentHashMap<>();
 
     public UserController() {
-        userDtoMap.put(1L, new UserDto(1L, "路人", 30));
-        userDtoMap.put(2L, new UserDto(2L, "张三", 20));
-        userDtoMap.put(3L, new UserDto(3L, "李四", 18));
+        userDtoMap.put(1L, new UserDto(1L, "张三", 18));
+        userDtoMap.put(2L, new UserDto(2L, "李四", 20));
+        userDtoMap.put(3L, new UserDto(3L, "王五", 22));
     }
 
     /**

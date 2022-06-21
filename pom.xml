@@ -13,6 +13,7 @@
         <module>chat03-receiveParam-json</module>
         <module>chat04-uploadFile</module>
         <module>chat05-returnView</module>
+        <module>chat06-return-json</module>
     </modules>
     <packaging>pom</packaging>
 

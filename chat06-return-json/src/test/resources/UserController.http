@@ -1,0 +1,8 @@
+### list
+GET http://localhost:8080/chat06/hello/list
+Accept: application/json
+
+### get
+GET http://localhost:8080/chat06/hello/get/1
+Accept: application/json
+

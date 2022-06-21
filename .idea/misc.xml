@@ -14,6 +14,7 @@
     <file type="web" url="file://$PROJECT_DIR$/chat03-receiveParam-json" />
     <file type="web" url="file://$PROJECT_DIR$/chat04-uploadFile" />
     <file type="web" url="file://$PROJECT_DIR$/chat05-returnView" />
+    <file type="web" url="file://$PROJECT_DIR$/chat06-return-json" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
