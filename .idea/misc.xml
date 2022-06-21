@@ -10,6 +10,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/chat01-helloWorld" />
     <file type="web" url="file://$PROJECT_DIR$/chat02-receiveParam" />
+    <file type="web" url="file://$PROJECT_DIR$/chat03-json" />
+    <file type="web" url="file://$PROJECT_DIR$/chat03-receiveParam-json" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,6 +21,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/chat03-json/pom.xml" />
+        <option value="$PROJECT_DIR$/receiveParam-json/pom.xml" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
       </set>
     </option>
