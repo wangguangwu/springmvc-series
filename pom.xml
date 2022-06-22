@@ -17,6 +17,7 @@
         <module>chat07-async</module>
         <module>chat08-static</module>
         <module>chat09-interceptor</module>
+        <module>chat10-globalException</module>
     </modules>
     <packaging>pom</packaging>
 
