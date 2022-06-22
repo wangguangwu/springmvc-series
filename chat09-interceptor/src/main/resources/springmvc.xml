@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--设置包扫描路径-->
+    <context:component-scan base-package="com.wangguangwu.controller"/>
+
+    <!--添加 mvc 注解驱动-->
+    <mvc:annotation-driven/>
+
+    <!--interceptors 定义拦截器：顺序从上到下-->
+    <mvc:interceptors>
+        <!--定义一个拦截器-->
+        <mvc:interceptor>
+            <!--指定拦截器匹配的 url-->
+            <mvc:mapping path="/user/**"/>
+            <!--指定拦截器排除的 url-->
+            <mvc:exclude-mapping path="/user/login"/>
+            <!--指定拦截器-->
+            <bean class="com.wangguangwu.interceptor.HandlerInterceptor1"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <mvc:exclude-mapping path="/user/login"/>
+            <bean class="com.wangguangwu.interceptor.HandlerInterceptor2"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>

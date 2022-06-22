@@ -16,6 +16,7 @@
         <module>chat06-return-json</module>
         <module>chat07-async</module>
         <module>chat08-static</module>
+        <module>chat09-interceptor</module>
     </modules>
     <packaging>pom</packaging>
 
