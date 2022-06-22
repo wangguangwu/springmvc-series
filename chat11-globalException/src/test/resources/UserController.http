@@ -1,0 +1,11 @@
+### fail
+GET http://localhost:8080/chat11/user/getUserId?code=99
+Accept: application/json
+
+### success
+GET http://localhost:8080/chat11/user/getUserId?code=6666
+Accept: application/json
+
+### fail
+GET http://localhost:8080/chat11/user/getUserId?code=abcd
+Accept: application/json
