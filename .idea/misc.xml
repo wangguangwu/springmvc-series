@@ -17,6 +17,7 @@
     <file type="web" url="file://$PROJECT_DIR$/chat05-returnView" />
     <file type="web" url="file://$PROJECT_DIR$/chat06-return-json" />
     <file type="web" url="file://$PROJECT_DIR$/chat07-async" />
+    <file type="web" url="file://$PROJECT_DIR$/chat08-static" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

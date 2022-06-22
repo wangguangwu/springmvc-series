@@ -1,0 +1,8 @@
+### 访问静态资源
+GET http://localhost:8080/chat08/static/images/1.jpg
+
+### demo
+GET http://localhost:8080/chat08/demo
+
+
+

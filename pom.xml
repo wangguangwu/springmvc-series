@@ -15,6 +15,7 @@
         <module>chat05-returnView</module>
         <module>chat06-return-json</module>
         <module>chat07-async</module>
+        <module>chat08-static</module>
     </modules>
     <packaging>pom</packaging>
 
