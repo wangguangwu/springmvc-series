@@ -19,6 +19,7 @@
         <module>chat09-interceptor</module>
         <module>chat10-globalException</module>
         <module>chat11-globalException</module>
+        <module>chat12-annotation</module>
     </modules>
     <packaging>pom</packaging>
 
